@@ -1,8 +1,11 @@
 # Build inputs and intermediates — 500 MB of them, and none is needed to serve or rebuild
 # the site. Every frame the page actually loads lives in site/, already cut and versioned.
-assets/
-shots/
-frames/
+# Anchored with a leading slash, and it matters: a bare "frames/" matches at EVERY level,
+# so it silently swallowed site/frames too — the landscape cut the desktop film runs on.
+# The repo shipped without it and the film simply did not load on a laptop.
+/assets/
+/shots/
+/frames/
 *.mp4
 *.mov
 
