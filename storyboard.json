@@ -1,0 +1,66 @@
+{
+  "title": "TERMINAL VELOCITY",
+  "brand": "GEAR — Neural Visor XV",
+  "vector": "The camera only ever falls straight down, one unbroken descent from the edge of space to the ground.",
+  "runtime_seconds": 25,
+  "clip_seconds": 5,
+  "grade": "near-black base, cold blue-white rim light aloft warming to amber on entry, burnt-orange scarf, #f5e100 telemetry accents, deep crushed blacks throughout",
+  "keyframes": [
+    {
+      "id": "kf1",
+      "prompt": "A lone armored figure in a sci-fi tactical suit and glossy black full-face visor, falling face-down through the black of the exosphere. Burnt-orange technical scarf streaming. Cold blue-white rim light along one edge, stars behind, the faint curved amber band of the atmosphere far below at the bottom of the frame. Photoreal, cinematic, near-black, deep crushed blacks."
+    },
+    {
+      "id": "kf2",
+      "prompt": "The same armored figure falling, now at the top of the atmosphere. Thin amber heat streaks beginning to form around him, the black visor showing its first faint glowing telemetry glyphs. Cold rim light warming. Photoreal, cinematic, near-black."
+    },
+    {
+      "id": "kf3",
+      "prompt": "The same armored figure falling into a dense grey cloud layer, vapour streaming around him, the visor now fully lit from within with amber telemetry glyphs, scarf whipping. Photoreal, cinematic, near-black, high contrast."
+    },
+    {
+      "id": "kf4",
+      "prompt": "The same armored figure falling below the cloud floor, a vast dark city grid of faint amber lights spread far below him, cloud ceiling above. Photoreal, cinematic, near-black."
+    },
+    {
+      "id": "kf5",
+      "prompt": "The same armored figure close above the dark city, individual lit amber streets resolved below, his body shifted from a straight dive into a braced landing posture, legs coming forward. Photoreal, cinematic, near-black."
+    },
+    {
+      "id": "kf6",
+      "prompt": "The same armored figure landed in a deep crouch on a black platform, one fist planted on the ground, a ring of pale dust bursting across the surface around him, single hard key light from above, pure black background. Photoreal, cinematic, near-black."
+    }
+  ],
+  "clips": [
+    {
+      "id": "c1-exosphere",
+      "from": "kf1",
+      "to": "kf2",
+      "prompt": "The camera falls locked alongside the armored figure, both plunging straight down through the black of the exosphere. Stars streak past, the burnt-orange scarf snaps in the thin air, and the curved amber band of the atmosphere grows across the bottom of the frame as the first thin heat streaks form around him. Static locked framing on the figure, one continuous camera move, no cuts, no edits."
+    },
+    {
+      "id": "c2-entry",
+      "from": "kf2",
+      "to": "kf3",
+      "prompt": "Continuing the same fall, descending into the burning upper atmosphere. Amber heat streaks tear past the figure on all sides and the glowing telemetry glyphs ignite and spread inside the black visor until it is lit from within. Figure held centered at constant scale, one continuous camera move, no cuts, no edits."
+    },
+    {
+      "id": "c3-cloudbreak",
+      "from": "kf3",
+      "to": "kf4",
+      "prompt": "Continuing straight down, the fall carrying the figure into a dense cloud layer. Grey vapour streams past on every side at high speed and then thins until the cloud floor breaks apart on a vast dark city grid of faint amber lights far below. Figure held centered, one continuous camera move, no cuts, no edits."
+    },
+    {
+      "id": "c4-grid",
+      "from": "kf4",
+      "to": "kf5",
+      "prompt": "Continuing the descent below the cloud floor, dropping down toward the city. The amber grid resolves into individual lit streets and rooftops, and the figure's body shifts from a straight dive into a braced landing posture with the legs coming forward. Figure held centered, one continuous camera move, no cuts, no edits."
+    },
+    {
+      "id": "c5-impact",
+      "from": "kf5",
+      "to": "kf6",
+      "prompt": "Continuing the same descent, decelerating hard through the final distance as the figure meets a black platform, landing in a deep crouch with one fist planted while a ring of pale dust bursts across the ground around him. Figure held centered, one continuous camera move, no cuts, no edits."
+    }
+  ]
+}

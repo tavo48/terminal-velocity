@@ -1,0 +1,14 @@
+# Build inputs and intermediates — 500 MB of them, and none is needed to serve or rebuild
+# the site. Every frame the page actually loads lives in site/, already cut and versioned.
+assets/
+shots/
+frames/
+*.mp4
+*.mov
+
+# macOS
+.DS_Store
+
+# Wrangler's local cache. No tokens (those live in the keychain), but it does carry the
+# Cloudflare account id and account name, which have no business in a repo.
+.wrangler/

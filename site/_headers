@@ -1,0 +1,28 @@
+# Frames are immutable *for a given FILM_V*. Re-cutting the film reuses the same
+# filenames, so `immutable` alone would pin every returning visitor to the old film
+# for a year — the cache-buster is the `?v=` query in FRAME_PATH (site/index.html).
+# Bump FILM_V on every re-cut. Never relax these headers instead: a repeat visit
+# has to re-scrub instantly, not re-download 96MB.
+/frames/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/frames-v/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/frames-m/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/frames-s/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# The turntable is 4.5 MB and had NO cache rule at all — every visit re-downloaded it.
+# Same versioned-URL contract as the film: bump TURN.v in index.html on any re-cut.
+/product/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# The page itself must always be revalidated so a redeploy is picked up.
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
